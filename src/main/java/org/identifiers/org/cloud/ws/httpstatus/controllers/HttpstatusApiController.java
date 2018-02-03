@@ -1,5 +1,7 @@
 package org.identifiers.org.cloud.ws.httpstatus.controllers;
 
+import org.identifiers.org.cloud.ws.httpstatus.models.HttpstatusApiModel;
+
 /**
  * @author Manuel Bernal Llinares <mbdebian@gmail.com>
  * Project: httpstatus
@@ -8,4 +10,9 @@ package org.identifiers.org.cloud.ws.httpstatus.controllers;
  * ---
  */
 public class HttpstatusApiController {
+    private HttpstatusApiModel httpstatusApiModel;
+
+    public HttpstatusApiController(HttpstatusApiModel httpstatusApiModel) {
+        this.httpstatusApiModel = httpstatusApiModel;
+    }
 }
