@@ -13,3 +13,7 @@ app_structure:
 	@mkdir -p target/app/log
 	@mkdir -p target/app/tmp
 	@cp target/httpstatus-*.jar target/app/service.jar
+
+container_production_build: app_structure
+	@echo "<===|DEVOPS|===> [BUILD] Production container $(container_name)"
+	@docker build -t $(container_name) .
