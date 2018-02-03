@@ -12,5 +12,8 @@ import org.springframework.http.HttpStatus;
 public class HttpstatusApiModel {
 
     public HttpStatus getHttpstatusFrom(int status) {
+        try {
+            return HttpStatus.valueOf(status);
+        }
     }
 }
