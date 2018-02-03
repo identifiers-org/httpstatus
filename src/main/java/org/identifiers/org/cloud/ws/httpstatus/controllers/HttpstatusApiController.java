@@ -24,6 +24,6 @@ public class HttpstatusApiController {
     @RequestMapping(value = "{httpStatusCode}", method = RequestMethod.GET)
     public @ResponseBody
     ResponseEntity<?> getHttpStatusCode(@PathVariable("httpStatusCode") int httpStatusCode) {
-        // TODO
+        return new ResponseEntity<>(httpstatusApiModel.getHttpstatusFrom(httpStatusCode));
     }
 }
