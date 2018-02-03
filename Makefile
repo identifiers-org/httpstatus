@@ -21,3 +21,6 @@ container_production_build: app_structure
 container_production_push: container_production_build
 	@echo "<===|DEVOPS|===> [PUBLISH]> Production container $(container_name)"
 	@docker push $(container_name)
+
+dev_container_build: clean container_production_build
+	@echo "<===|DEVOPS|===> [DEV] Preparing local container"
