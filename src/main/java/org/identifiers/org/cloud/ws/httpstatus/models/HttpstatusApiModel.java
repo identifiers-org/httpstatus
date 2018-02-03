@@ -14,6 +14,8 @@ public class HttpstatusApiModel {
     public HttpStatus getHttpstatusFrom(int status) {
         try {
             return HttpStatus.valueOf(status);
+        } catch (IllegalArgumentException e) {
+            return HttpStatus.BAD_REQUEST;
         }
     }
 }
