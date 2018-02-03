@@ -1,5 +1,7 @@
 package org.identifiers.org.cloud.ws.httpstatus.models;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 
 /**
@@ -10,6 +12,7 @@ import org.springframework.http.HttpStatus;
  * ---
  */
 public class HttpstatusApiModel {
+    private static Logger logger = LoggerFactory.getLogger(HttpstatusApiModel.class);
 
     public HttpStatus getHttpstatusFrom(int status) {
         try {
