@@ -28,3 +28,5 @@ dev_container_build: clean container_production_build
 clean:
 	@echo "<===|DEVOPS|===> [CLEAN] Cleaning the space"
 	@mvn clean > /dev/null
+
+.PHONY: all clean app_structure container_production_build container_production_push dev_container_build
