@@ -1,5 +1,7 @@
 package org.identifiers.org.cloud.ws.httpstatus.models;
 
+import org.springframework.http.HttpStatus;
+
 /**
  * @author Manuel Bernal Llinares <mbdebian@gmail.com>
  * Project: httpstatus
@@ -8,4 +10,7 @@ package org.identifiers.org.cloud.ws.httpstatus.models;
  * ---
  */
 public class HttpstatusApiModel {
+
+    public HttpStatus getHttpstatusFrom(int status) {
+    }
 }
