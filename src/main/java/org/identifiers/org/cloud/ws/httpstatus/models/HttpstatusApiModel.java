@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class HttpstatusApiModel {
     private static Logger logger = LoggerFactory.getLogger(HttpstatusApiModel.class);
 
-    public HttpStatus getHttpstatusFrom(int status) {
+    public HttpStatus getHttpStatusFrom(int status) {
         try {
             return HttpStatus.valueOf(status);
         } catch (IllegalArgumentException e) {
